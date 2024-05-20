@@ -1,23 +1,42 @@
-# GridNeighborChecker
-A simple grid neighbor checker algoritm. Firstly try to code yourself. 
-
 # Grid Neighbor Checker
 
-This project is designed to check whether the cells in a grid are adjacent to each other. The grid is represented as a 2D array, and the goal is to determine if a cell is directly next to another cell either horizontally or vertically.
+Welcome to the Grid Neighbor Checker project!
 
-## How to Use
+## Objective
 
-1. **Clone the Repository:**
-   git clone https://github.com/umutsar/GridNeighborChecker.git
-   cd GridNeighborChecker
-Run the Script:
-Ensure you have Node.js installed. Open a terminal in the project directory and run:
+The goal of this project is to determine if the cells in a 2D grid are adjacent to each other. The adjacency is defined as being next to each other either horizontally or vertically.
 
-node gridNeighborChecker.js
-Understand the Output:
-The script will output a grid showing the adjacency status of each cell relative to others. For example:
+## Task Description
 
-X    9  |  4  |  6  |  3  |  5  |  8 
+1. **Grid Representation:**
+   - Represent the grid as a 2D array.
+   - Each element in the array should contain two integers.
+
+2. **Adjacency Check:**
+   - Write a function to check if two cells are adjacent.
+   - The function should take the coordinates of two cells and return whether they are adjacent.
+
+3. **Output:**
+   - The output should be a clear and formatted display showing the adjacency status of each cell relative to the others in the grid.
+
+## Example Scenario
+
+Imagine you have a grid like this:
+
+[
+[9, 4],
+[6, 3],
+[5, 8]
+]
+
+- Your task is to determine if cells like `[9, 4]` and `[6, 3]` are adjacent.
+- The function should analyze each pair of cells and output the adjacency results.
+
+## Example Output
+
+Here is an example of what the output might look like:
+
+X    9  |  4  |  6  |  3  |  5  |  8
 
 9    1     0     0     0     0     0 
 -
@@ -30,29 +49,14 @@ X    9  |  4  |  6  |  3  |  5  |  8
 5    0     0     0     0     1     0 
 -
 8    0     0     0     0     0     1 
-Project Description
-The project includes a function isNextTo(a, b, c, d) that checks if the cell at coordinates (a, b) is adjacent to the cell at coordinates (c, d). The adjacency is defined as being next to each other either horizontally or vertically, but not diagonally.
 
-The ilkDizi array represents the grid:
 
-let ilkDizi = [
-    [9, 4],
-    [6, 3],
-    [5, 8]
-];
-The isNextTo function returns 1 if the cells are adjacent and 0 otherwise:
+- In this output, `1` indicates that the cells are adjacent, and `0` indicates that they are not.
 
-const isNextTo = (a, b, c, d) => {
-    if (a == c) {
-        return Math.abs(b - d) == 1 ? 1 : 0;
-    } else if (b == d) {
-        return Math.abs(a - c) == 1 ? 1 : 0;
-    }
-    return 0;
-};
-The script generates a formatted output showing the adjacency status for each cell relative to the others in the grid.
+## How to Get Started
 
-Example
-To see the script in action, simply run it and observe the printed grid. The isNextTo function checks each cell's adjacency and the results are displayed in a clear and readable format.
+1. **Clone the Repository:**
+   git clone https://github.com/umutsar/GridNeighborChecker.git
+   cd GridNeighborChecker
+   node main.js
 
-Feel free to experiment with different grids by modifying the ilkDizi array and observe how the output changes!
