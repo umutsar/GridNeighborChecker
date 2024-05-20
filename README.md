@@ -38,7 +38,7 @@ Here is an example of what the output might look like:
 
 - X    9  |  4  |  6  |  3  |  5  |  8
 - _
-- 9    1     0     0     0     0     0
+- 9        1     0     0     0     0     0
 - _
 - 4    0     1     0     0     0     0 
 - _
