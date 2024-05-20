@@ -37,17 +37,17 @@ Imagine you have a grid like this:
 Here is an example of what the output might look like:
 
 X    9  |  4  |  6  |  3  |  5  |  8
-
-9    1     0     0     0     0     0 
--
+_
+9    1     0     0     0     0     0
+_
 4    0     1     0     0     0     0 
--
+_
 6    0     0     1     0     0     0 
--
+_
 3    0     0     0     1     0     0 
--
+_
 5    0     0     0     0     1     0 
--
+_
 8    0     0     0     0     0     1 
 
 
