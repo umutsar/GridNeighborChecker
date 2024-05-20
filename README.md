@@ -36,19 +36,7 @@ Imagine you have a grid like this:
 
 Here is an example of what the output might look like:
 
-- X    9  |  4  |  6  |  3  |  5  |  8
-- _
-- 9        1     0     0     0     0     0
-- _
-- 4    0     1     0     0     0     0 
-- _
-- 6    0     0     1     0     0     0 
-- _
-- 3    0     0     0     1     0     0 
-- _
-- 5    0     0     0     0     1     0 
-- _
-- 8    0     0     0     0     0     1 
+![image](https://github.com/umutsar/GridNeighborChecker/assets/78661309/cec00a78-fe65-4fca-97a0-76c7214763a8)
 
 
 - In this output, `1` indicates that the cells are adjacent, and `0` indicates that they are not.
